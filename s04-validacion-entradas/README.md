@@ -467,7 +467,12 @@ Las pruebas describen el comportamiento **seguro**. No te dicen cómo programarl
 | `TestConstanciaEnlaceNoEscapa` | La prueba crea `constancias/2026A0002.txt` como **enlace simbólico** hacia `../main.go`. Su nombre tiene formato válido, así que el patrón no lo detiene: **no** debe poder leerse. |
 | `TestErroresNoFiltranRutas` | Cuando una constancia no existe, la respuesta **no** debe mostrar rutas internas ni la matrícula consultada. |
 
-### 8.5 Reglas (romperlas anula el criterio de corrección)
+### 8.5 Reglas
+
+Consecuencias en la rúbrica (8.9): romper la **regla 1** deja en 0 el criterio «Calidad de la
+corrección»; romper la **regla 2** lo baja a Insuficiente; romper la **regla 3** lo deja como máximo en
+Aceptable; romper las reglas **4, 5 o 6** puede impedir que tu código compile o se revise.
+
 
 1. **No modifiques `ejercicio-bc1/main_test.go`.** Solo modificas `ejercicio-bc1/main.go`.
 2. **Corrige la causa, no el síntoma.** Prohibido hacer pasar una prueba con casos especiales, por
